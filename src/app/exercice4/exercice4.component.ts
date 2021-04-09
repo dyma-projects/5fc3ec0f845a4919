@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-exercice4',
-  templateUrl: './exercice4.component.html',
-  styleUrls: ['./exercice4.component.css']
+  selector: "app-exercice4",
+  templateUrl: "./exercice4.component.html",
+  styleUrls: ["./exercice4.component.css"],
 })
-export class Exercice4Component implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class Exercice4Component {
+  public texts: Array<{ number: string }> = [
+    {
+      number: "UN",
+    },
+    {
+      number: "DEUX",
+    },
+    {
+      number: "TROIS",
+    },
+  ];
 }

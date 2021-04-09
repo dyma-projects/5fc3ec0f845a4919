@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-exercice1',
-  templateUrl: './exercice1.component.html',
-  styleUrls: ['./exercice1.component.css']
+  selector: "app-exercice1",
+  templateUrl: "./exercice1.component.html",
+  styleUrls: ["./exercice1.component.css"],
 })
-export class Exercice1Component implements OnInit {
+export class Exercice1Component {
+  public inputType = "date";
 
-  constructor() { }
+  public label = "Veuillez cliquer sur ce texte";
 
-  ngOnInit(): void {
+  public color = "red";
+
+  public changeColor(color: string): void {
+    this.color = color;
   }
-
 }
